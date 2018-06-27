@@ -1,0 +1,49 @@
+
+body{
+  background-color:powderblue;
+}
+ul {
+    list-style-type: none;
+    top:30px;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #342312;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+  background-color: black;
+    display: block;
+    color: white;
+    padding: 25px 20px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: red;
+    color: black;
+}
+
+li a:hover:not(.active) {
+    background-color: aqua;
+    color: black;
+}
+div{
+  border:3px solid black;
+  background-color:powderblue;
+}
+h1{
+  text-align: center;
+  background-color: black;
+  color:white;
+}
+h3 a{
+  text-decoration:none;
+}
+h3{
+  text-align:right;
+  margin-right:90px
+}

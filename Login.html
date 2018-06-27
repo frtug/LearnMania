@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<link rel="stylesheet" href="css/Login.css">
+
+</head>
+<body>
+	<div class="rt">
+		<h1><a href="new1project.html"> HOME</a> </h1>
+	</div>
+<div class="wrap">
+<form>
+<h2>Login</h2>
+<p><input type ="email" id="t2" name ="Email" placeholder="Your Email"><br></p>
+<p><input type ="password" id="t4" name ="password" placeholder="Password"><br></p>
+<br>
+<center><input type="submit" value="Submit" id="t7">
+</form>
+<script>
+
+document.getElementById("t7").onclick=function validate()
+	 {
+		 if (document.getElementById("t2").value=="")
+		{
+	 alert("Please provide your Email!");
+	  document.getElementById("t2").focus();
+	return false;
+		 }
+		 else if (document.getElementById("t4").value=="")
+		  {
+			 alert("Please provide your Password!");
+			 document.getElementById("t4").focus();
+			 return false;
+		}
+ else if(document.getElementById("t4").value=="12345678")
+ {
+  alert("You are valid ");
+		return true;
+	}
+		else{
+			alert("Not valid ");
+			return false;
+		}
+
+
+
+}
+</script>
+</body>
+</html>

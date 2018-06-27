@@ -1,0 +1,36 @@
+fieldset{
+  background-color: powderblue;
+}
+form{
+  font-size: 30px;
+}
+legend{
+  color:white;
+  background-color:black;
+}
+body{
+  background-image: url('Images/code.jpg');
+}
+h3{
+  color:black;
+  background-color: powderblue;
+  border:3px solid red;
+  text-align:center;
+  font-family: courier;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+input[type=submit]{
+	width: 20%;
+  height:50px;
+	background:red;
+  color:white;
+  border-radius: 20px;
+}
+input[type=email]{
+  width:20%;
+  height:40px;
+
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp</title>
+
+<style>
+.wrap{
+	width:350px;
+
+	margin:auto;
+	background-color:grey;
+	margin-top:50px;
+	padding:5px;
+}
+form{
+	padding:5px;
+	font-family: arial-color:greyr:1px dotted white;
+}
+h2{
+	text-align: center;
+	background: orange;
+	color: white;
+	padding:10px;
+	border-radius:10px;
+}
+input{
+	padding:10px;
+	margin:5px;
+	border-radius:5px;
+
+}
+input[type=text], input[type=email],input[type=number], input[type=password]{
+	width:90%;
+ color:orange;
+}
+input[type=submit]{
+	width: 95%;
+	background:orange;
+/*	cursor:pointer;*/
+	font-size:18px;
+	font-weight:bold;
+	color:white;
+}
+input[type=submit]:hover{
+	background:green ;
+}
+select{
+	padding:10px;
+	width:32%;
+	border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<form>
+<h2>SignUp</h2>
+<p><input type ="text" id="t1"	 name ="Username" placeholder="Username"><br></p>
+<p><input type ="email" id="t2" name ="Email" placeholder="Your Email"><br></p>
+<p><input type ="text" id="t3" name ="Number" placeholder="10 Digit Mobile Number"><br></p>
+<p><input type ="password" id="t4" name ="password" placeholder="Password"><br></p>
+<p><input type ="password" id="t5" name ="Confirm Password" placeholder="Confirm Password"><br></p>
+<p><i>Upload Your student Id:</i><input type="file" id="t6" accept="images/*"></p>
+<input type= "radio" name="Gender" value="male">Male
+<input type= "radio" name="Gender" value="female">Female
+<br>
+<h3/><input type="checkbox">I Agree To the Terms and conditions
+<br>
+<center><input type="submit" value="Submit" id="t7">
+
+</form>
+<script>document.getElementById("t7").onclick=function validate()
+	 {
+	                if (document.getElementById("t1").value=="")
+	                {
+	                    alert("Please provide your Username name!");
+	                    document.getElementById("t1").focus();
+	                    return false;
+	                }
+
+							 else if(document.getElementById("t2").value=="")
+							 {
+									 alert("Please provide your Email!");
+									 document.getElementById("t2").focus();
+									 return false;
+							 }
+
+							               else if (document.getElementById("t3").value=="")
+							                {
+							                    alert("Please provide your 10 Digit Mobile Number!");
+							                    document.getElementById("t3").focus();
+							                    return false;
+							                }
+
+														else if (document.getElementById("t4").value=="")
+														   {
+														     alert("Please provide your Password!");
+														         document.getElementById("t4").focus();
+														            return false;
+														   }
+														else	if (document.getElementById("t5").value=="")
+									                 {
+									                     alert("Please provide your Confirm Password!");
+									                     document.getElementById("t5").focus();
+
+									                     return false;
+									                 }
+											else if (document.getElementById("t6").value=="")
+									                 {
+									                     alert("Please provide your File!");
+									                     document.getElementById("t6").focus();
+									                     return false;
+									                 }
+																	 else if(document.getElementById("t5").value == t4.value){
+																		 alert("Password is confirmed!");
+																		 document.getElementById("t5").focus();
+																		 
+																		 return true;
+																	 }
+																	 else{
+																		 alert("not valid");
+																	 }
+
+}
+
+</script>
+</body>
+</html>
